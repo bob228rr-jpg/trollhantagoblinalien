@@ -264,15 +264,22 @@ h3 {
   white-space: nowrap;
 }
 
-.ticker-tape div {
-  display: inline-flex;
-  gap: 36px;
+.ticker-track {
+  display: flex;
+  width: max-content;
   padding: 10px 0;
-  animation: marquee 18s linear infinite;
+  animation: marquee 24s linear infinite;
+}
+
+.ticker-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 36px;
+  padding-right: 36px;
 }
 
 .ticker-tape span {
-  display: inline-block;
+  display: block;
 }
 
 .section-band {
@@ -489,7 +496,7 @@ h3 {
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translateX(-20%);
   }
 }
 
